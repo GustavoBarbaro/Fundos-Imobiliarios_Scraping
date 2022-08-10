@@ -8,8 +8,6 @@
 
 # Indice
 
-# Table of contents
-
 - [Índice](#indice)
 - [Sobre o projeto](#sobre-o-projeto)
 - [Requisitos](#requisitos)
