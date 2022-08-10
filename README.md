@@ -4,9 +4,24 @@
 
 **Esse projeto não deve ser considerado como uma recomendação de investimento !!!**
 
-
-
 ---
+
+# Indice
+
+# Table of contents
+
+- [Índice](#indice)
+- [Sobre o projeto](#sobre-o-projeto)
+- [Requisitos](#requisitos)
+- [Instalação](#instalacao)
+  - [Download do Selenium](#download-do-selenium)
+  - [Download do Web Driver para Chrome](#download-do-web-driver-para-chrome)
+- [Habilitando a biblioteca selenium dentro do Excel](#habilitando-a-biblioteca-selenium-dentro-do-excel)
+  - [Habilitando a guia Desenvolvedor](#habilitando-a-guia-desenvolvedor)
+  - [Habilitando a biblioteca](#habilitando-a-biblioteca)
+- [Usabilidade](#usabilidade)
+- [A Estratégia](#a-estrategia)
+
 
 # Sobre o projeto
 
@@ -38,7 +53,7 @@ Não recomendo que outras pessoas a utilizem para investir as cegas sem antes es
 ---
 
 
-# Instalação
+# Instalacao
 
 ## Download do Selenium
 
@@ -111,7 +126,7 @@ Nela o usuário poderá entrar com a quantidade mínima de patrimônimo líquido
 ---
 
 
-# A Estratégia
+# A Estrategia
 
 
 A estratégia de recomendação de FIIS consiste em ordenar os fundos que possuem os maiores dividendos e que estão mais baratos. Para isso foi-se criado um sistema de pontuação baseado em dois indicadores: o *dividend yield* e o P/VPA. O sistema de pontuação funcionada da seguinte forma:
