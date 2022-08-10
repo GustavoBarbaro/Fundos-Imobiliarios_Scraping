@@ -1,5 +1,4 @@
-[![OS - Windows](https://img.shields.io/badge/OS-Windows-blue?logo=windows&logoColor=white)](https://www.microsoft.com/ "Go to Microsoft homepage")
-
+[![OS - Windows](https://img.shields.io/badge/OS-Windows-blue?logo=windows&logoColor=white)](https://www.microsoft.com/ "Go to Microsoft homepage")  [![GustavoBarbaro - Excel_Scraping_FII_Strategy_Invest](https://img.shields.io/static/v1?label=GustavoBarbaro&message=Excel_Scraping_FII_Strategy_Invest&color=gree&logo=github)](https://github.com/GustavoBarbaro/Excel_Scraping_FII_Strategy_Invest "Go to GitHub repo") [![License](https://img.shields.io/badge/License-MIT-yellow)](#license)
 
 ---
 
@@ -21,6 +20,11 @@ Apenas reforçando, inicialmente eu desenvolvi essa ferramente para meu uso pró
 
 Não recomendo que outras pessoas a utilizem para investir as cegas sem antes estudar as estratégias e ver que elas fazem sentido para você.
 
+
+
+---
+
+
 # Requisitos
 
 * ![Microsoft Excel](https://img.shields.io/badge/Microsoft_Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white)
@@ -28,6 +32,11 @@ Não recomendo que outras pessoas a utilizem para investir as cegas sem antes es
 * ![Selenium](https://img.shields.io/badge/-selenium-%43B02A?style=for-the-badge&logo=selenium&logoColor=white)
 
 * ![Google Chrome](https://img.shields.io/badge/Google%20Chrome-4285F4?style=for-the-badge&logo=GoogleChrome&logoColor=white)
+
+
+
+---
+
 
 # Instalação
 
@@ -59,6 +68,11 @@ C:\Users\SEU_USUARIO\AppData\Local\SeleniumBasic
 
 e substitua o executável pelo que foi copiado.
 
+
+
+---
+
+
 # Habilitando a biblioteca selenium dentro do Excel
 
 ## Habilitando a guia Desenvolvedor
@@ -75,6 +89,11 @@ Na janela que se abriu, clique em Ferramentas > Referências.
 
 Marque a caixa **Selenium Type Library**
 
+
+
+---
+
+
 # Usabilidade
 
 A figura abaixo representa a página inicial.
@@ -86,3 +105,26 @@ Nela o usuário poderá entrar com a quantidade mínima de patrimônimo líquido
 * Ao clicar no botão Filtra Fundos, o sistema realizará o scraping automaticamente, filtrará os fundos, e atualizará as guias: Top 15 e Base de Dados;
 
 * Os três botões abaixo permitem se deslocar entre as guias;
+
+
+
+---
+
+
+# A Estratégia
+
+
+A estratégia de recomendação de FIIS consiste em ordenar os fundos que possuem os maiores dividendos e que estão mais baratos. Para isso foi-se criado um sistema de pontuação baseado em dois indicadores: o *dividend yield* e o P/VPA. O sistema de pontuação funcionada da seguinte forma:
+
+1. Primeiro ordenamos a coluna do *dividend yield* do maior para o menor valor, pois estamos querendo o fundo que mais pagou dividendos. Com a coluna ordenada, é estabelecido um ranking dos melhores colocados, começando em 1 para o fundo que mais pagou dividendos.
+
+2. Em seguida ordenamos a coluna P/VPA do menor para o maior, pois estamos a procura dos fundos que estão mais descontados. Logo após, é atribuindo um ranking dos melhores colocados, começando em 1 para o fundo que está mais barato.
+
+3. Por último, para cada FII é somado o seu valor no ranking do *dividend yield* e do P/VPA formando um terceiro ranking. Esse novo ranking é ordenado de forma crescente, pois os FIIS que tiveram o menor valor são os com os melhores rendimentos e mais descontados.
+
+
+
+
+---
+
+
