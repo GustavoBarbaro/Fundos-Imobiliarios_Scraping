@@ -1,4 +1,4 @@
-[![OS - Windows](https://img.shields.io/badge/OS-Windows-blue?logo=windows&logoColor=white)](https://www.microsoft.com/ "Go to Microsoft homepage")  [![GustavoBarbaro - Excel_Scraping_FII_Strategy_Invest](https://img.shields.io/static/v1?label=GustavoBarbaro&message=Excel_Scraping_FII_Strategy_Invest&color=gree&logo=github)](https://github.com/GustavoBarbaro/Excel_Scraping_FII_Strategy_Invest "Go to GitHub repo") [![License](https://img.shields.io/badge/License-MIT-yellow)](#license)
+[![OS - Windows](https://img.shields.io/badge/OS-Windows-blue?logo=windows&logoColor=white)](https://www.microsoft.com/ "Go to Microsoft homepage")  [![GustavoBarbaro - Excel_Scraping_FII_Strategy_Invest](https://img.shields.io/static/v1?label=GustavoBarbaro&message=Fundos-Imobiliarios_Scraping&color=gree&logo=github)](https://github.com/GustavoBarbaro/Excel_Scraping_FII_Strategy_Invest "Go to GitHub repo") [![License](https://img.shields.io/badge/License-MIT-yellow)](#license)
 
 ---
 
@@ -127,7 +127,7 @@ Nela o usuário poderá entrar com a quantidade mínima de patrimônimo líquido
 # A Estrategia
 
 
-A estratégia de recomendação de FIIS consiste em ordenar os fundos que possuem os maiores dividendos e que estão mais baratos. Para isso foi-se criado um sistema de pontuação baseado em dois indicadores: o *dividend yield* e o P/VPA. O sistema de pontuação funcionada da seguinte forma:
+A estratégia de recomendação de FIIS consiste realizar o scraping do site [Funds Explorer](https://www.fundsexplorer.com.br/ranking) em ordenar os fundos que possuem os maiores dividendos e que estão mais baratos. Para isso foi-se criado um sistema de pontuação baseado em dois indicadores: o *dividend yield* e o P/VPA. O sistema de pontuação funcionada da seguinte forma:
 
 1. Primeiro ordenamos a coluna do *dividend yield* do maior para o menor valor, pois estamos querendo o fundo que mais pagou dividendos. Com a coluna ordenada, é estabelecido um ranking dos melhores colocados, começando em 1 para o fundo que mais pagou dividendos.
 
