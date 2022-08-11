@@ -27,9 +27,9 @@ Esse projeto foi desenvolvido com a intenção de estudar e praticar web-scrapin
 
 Investindo todos os meses em fundos imobiliários, senti a necessidade de ter uma ferramenta que compilasse todos os fundos listados na bolsa e aplicasse alguns filtros para que eu pudesse escolher em qual iria aportar no mês.
 
-Então decidi criar a ferramenta eu mesmo, utilizando como base o Excel e o Selenium para o scraping. A ferramenta copia os fundos listados para uma planilha e aplica os filtros automaticamente, além de reunir também quais estão no processo de emissão, ou seja emitindo novas cotas.
+Então decidi criar a ferramenta eu mesmo, utilizando como base o Excel e o Selenium para o scraping e o site [Funds Explorer](https://www.fundsexplorer.com.br/ranking) como fonte de dados. A ferramenta copia os fundos listados para uma planilha e aplica os filtros automaticamente, além de reunir também quais estão no processo de emissão, ou seja emitindo novas cotas.
 
-Apenas reforçando, inicialmente eu desenvolvi essa ferramente para meu uso prórpiro, mas achei interessante compartilhar para outros que gostariam de analisá-la e quem sabe, melhorá-la.
+Apenas reforçando, inicialmente eu desenvolvi essa ferramenta para meu uso próprio, mas achei interessante compartilhar para outros que gostariam de analisá-la e quem sabe, melhorá-la.
 
 Não recomendo que outras pessoas a utilizem para investir as cegas sem antes estudar as estratégias e ver que elas fazem sentido para você.
 
@@ -90,7 +90,7 @@ e substitua o executável pelo que foi copiado.
 
 ## Habilitando a guia Desenvolvedor
 
-Abra o Exel, vá em Arquivo > Opções > Personalizar Faixa de Opções
+Abra o Excel, vá em Arquivo > Opções > Personalizar Faixa de Opções
 
 Habilite a caixa Desenvolvedor
 
@@ -127,7 +127,7 @@ Nela o usuário poderá entrar com a quantidade mínima de patrimônimo líquido
 # A Estrategia
 
 
-A estratégia de recomendação de FIIS consiste realizar o scraping do site [Funds Explorer](https://www.fundsexplorer.com.br/ranking) em ordenar os fundos que possuem os maiores dividendos e que estão mais baratos. Para isso foi-se criado um sistema de pontuação baseado em dois indicadores: o *dividend yield* e o P/VPA. O sistema de pontuação funcionada da seguinte forma:
+A estratégia de recomendação de FIIS consiste em realizar o scraping do site [Funds Explorer](https://www.fundsexplorer.com.br/ranking) e ordenar os fundos que possuem os maiores dividendos e que estão mais baratos. Para isso foi-se criado um sistema de pontuação baseado em dois indicadores: o *dividend yield* e o P/VPA. O sistema de pontuação funciona da seguinte forma:
 
 1. Primeiro ordenamos a coluna do *dividend yield* do maior para o menor valor, pois estamos querendo o fundo que mais pagou dividendos. Com a coluna ordenada, é estabelecido um ranking dos melhores colocados, começando em 1 para o fundo que mais pagou dividendos.
 
